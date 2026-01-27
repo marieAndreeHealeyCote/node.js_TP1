@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>MétéoApp - Accueil</title>
+    <title>MétéoApp - Recherche</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Favicon -->
@@ -14,7 +14,7 @@
       <div
         class="container mx-auto flex justify-between items-center py-4 px-6"
       >
-        <h1 class="text-2xl font-bold">MétéoApp</h1>
+        <h1 class="text-2xl font-bold">MétéoApp 🌤️</h1>
         <nav>
           <ul class="flex gap-6">
             <li>
@@ -45,6 +45,8 @@
         <h2 class="text-xl font-bold text-teal-700 mb-4">
           Rechercher une ville
         </h2>
+
+        <!-- Formulaire de recherche -->
         <form id="cityForm" class="flex gap-2 mb-4">
           <input
             type="text"
@@ -62,6 +64,15 @@
         </form>
         <p id="loading" class="text-gray-600 text-center mb-2"></p>
         <div id="results" class="mt-4"></div>
+
+        <!-- Image météo -->
+        <div class="text-center mb-6">
+          <img
+            src="assets/img/meteo.png"
+            alt="Image météo"
+            class="mx-auto mt-8 w-28 h-28 transition-transform duration-300 hover:scale-110"
+          />
+        </div>
       </section>
     </main>
 
