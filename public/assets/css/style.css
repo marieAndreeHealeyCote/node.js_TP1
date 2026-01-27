@@ -1,0 +1,27 @@
+/* assets/css/style.css */
+
+/* Exemple : ajouter quelques styles personnalisés */
+
+/* Footer sticky (au cas où Tailwind ne suffirait pas) */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* Style pour les formulaires si tu veux un léger surlignage au focus */
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.5); /* teal-500 */
+}
+
+/* Exemple : style pour les messages d'erreur ou chargement */
+#loading {
+  font-style: italic;
+  color: #555;
+}

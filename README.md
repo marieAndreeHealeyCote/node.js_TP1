@@ -1,32 +1,65 @@
-# Mini-application Node.js avec API publique
+# MétéoApp - Node.js + Open-Meteo + Tailwind CDN
 
-## 📌 Description du projet
+## Description
 
-Ce projet est une mini-application web développée avec Node.js et Express.
-Elle permet de récupérer des données depuis une API publique, d’effectuer des requêtes dynamiques à partir d’un paramètre (ID, nom, symbole, etc.), de sauvegarder les données localement dans un fichier JSON, puis de les afficher dans une interface HTML dynamique stylisée avec CSS.
+Application web pour afficher la météo d'une ville grâce à l'API Open-Meteo.
 
-Les informations sensibles, telles que les clés d’API, sont protégées à l’aide d’un fichier .env.
+- Node.js + Express pour le backend
+- Sauvegarde des données dans `data/`
+- Frontend stylisé avec **Tailwind CSS via CDN**
+- Header, footer sticky, interface responsive
 
-## 🎯 Objectifs
+## Installation
 
-Utiliser une API publique via des requêtes HTTP GET
+1. Cloner le projet
 
-Sauvegarder les données récupérées dans un fichier .json
+```bash
+git clone <URL_DU_DEPOT>
+cd meteo-app
+```
 
-Gérer les données sensibles avec un fichier .env
+2. Installer les dépendances :
 
-Afficher les données dans une page HTML dynamique
+npm install
 
-Mettre en place un serveur Express avec plusieurs routes
+3. Créer un fichier .env à la racine (optionnel) :
 
-## 🛠️ Technologies utilisées
+PORT=3000
+
+## Exécution
+
+1. Lancer le serveur :
+
+node index.js
+
+2. Ouvrir le navigateur à l’adresse :
+
+http://localhost:3000/index.html
+
+3. Aller sur Rechercher pour tester la météo d’une ville
+
+Les données sont récupérées via l’API Open-Meteo et affichées dynamiquement.
+
+## Backend
+
+POST /fetch : Reçoit le nom d’une ville, interroge Open-Meteo, sauvegarde les données et renvoie la météo.
+
+GET /data/:city : Retourne les données JSON pour une ville stockée.
+
+## Frontend
+
+Pages HTML : index.html, search.html, contact.html
+
+Script JS : assets/js/script.js
+
+CSS personnalisé : assets/css/style.css
+
+Tailwind CSS via CDN pour stylisation rapide et modern
+
+## Dépendances
 
 Node.js
-
 Express
-
-JavaScript
-
-HTML / CSS
-
+node-fetch
 dotenv
+Tailwind CSS CDN

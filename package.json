@@ -1,0 +1,33 @@
+{
+  "name": "tp-1",
+  "version": "1.0.0",
+  "description": "Ce projet est une mini-application web développée avec Node.js et Express.\r Elle permet de récupérer des données depuis une API publique, d’effectuer des requêtes dynamiques à partir d’un paramètre (ID, nom, symbole, etc.), de sauvegarder les données localement dans un fichier JSON, puis de les afficher dans une interface HTML dynamique stylisée avec CSS.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marieAndreeHealeyCote/node.js_TP1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marieAndreeHealeyCote/node.js_TP1/issues"
+  },
+  "homepage": "https://github.com/marieAndreeHealeyCote/node.js_TP1#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "nodemon": "^3.1.11",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18"
+  }
+}
