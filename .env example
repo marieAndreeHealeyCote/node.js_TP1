@@ -1,0 +1,5 @@
+# Clé publique (Pas de clé API nécessaire pour Open-Meteo, .env sert juste au port)
+API_KEY=TA_CLE_API (no need)
+
+# Port du serveur
+PORT=3000
